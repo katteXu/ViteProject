@@ -1,0 +1,25 @@
+.main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    border: 2px solid #ccc;
+    padding: 20px 40px;
+    cursor: pointer;
+    &:hover {
+      border-color: #477aef;
+      .title {
+        color: #477aef;
+      }
+    }
+    & + .card {
+      margin-left: 42px;
+    }
+    .title {
+      font-size: 24px;
+      color: #000000a6;
+      user-select: none;
+    }
+  }
+}
